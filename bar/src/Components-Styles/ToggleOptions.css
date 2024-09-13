@@ -1,0 +1,54 @@
+.toggle-options{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    flex-direction: column;
+    z-index: 999999;
+}
+
+.menu-ul-toggle-list{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.li-toggle{
+    list-style: none;
+}
+.a-toggle{
+    text-decoration: none;
+    color: rgb(91, 94, 100);
+    font-size: 40px;
+    transition: color .3s ease-in;
+}
+
+.a-toggle:hover{
+    color: rgb(247, 247, 247);
+}
+
+.button-toggle-options{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 5rem;
+}
+
+.button-toggle-options:hover svg{
+    fill: rgb(247, 247, 247);
+}
+
+.button-toggle-options svg{
+    width: 100%;
+    height: 100%;
+    transition: fill .5s ease-in-out;
+}

@@ -1,0 +1,87 @@
+.aside-menu{
+    width: 20%;
+    min-width: 200px;
+    height: 480px;
+    background-color: rgb(27, 28, 29);
+    border-radius: .5rem;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.h3,
+.h5{
+    color: rgb(247, 247, 247);
+}
+
+input[type="checkbox"]{
+    accent-color: #00ffaa;
+    margin-right: .3rem;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(91,94,100);
+    /*cursor: pointer;*/
+    transition: color .3s ease;
+    cursor: pointer;
+}
+
+label:hover{
+    color: rgb(247, 247, 247);
+}
+
+.aside-box{
+    width: 80%;
+    height: auto;
+    border-bottom: thin solid rgb(91,94,100);
+    color: rgb(247, 247, 247);
+    padding: .5rem;
+}
+
+.aside-box-content{
+    width: 80%;
+    height: auto;
+    border-bottom: thin solid rgb(91,94,100);
+    color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+.aside-box-content[open]{
+    animation: open 0.5s ease-in-out;
+}
+
+@keyframes open {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.aside-menu::-webkit-scrollbar{
+    width: 0;
+}
+
+.aside-menu::-webkit-scrollbar-track{
+    background-color: rgb(27, 28, 29);
+}
+
+.aside-menu::-webkit-scrollbar-thumb{
+    background-color: rgb(91,94,100);
+    border-radius: .5rem;
+}
+
+.aside-menu:hover::-webkit-scrollbar{
+    width: 8px;
+}
+
+@media screen and (max-width:550px){
+    .aside-menu{
+        display: none;
+    }
+}

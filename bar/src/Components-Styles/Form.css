@@ -1,0 +1,214 @@
+.input-dates-form{
+    width: 40%;
+    min-width: 270px;
+    height: 90vh;
+    border-radius: .5rem;
+    background-color: rgb(27, 28, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    color: rgb(247, 247, 247);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: .5rem;
+
+    h3{
+        color: #00ffaa;
+    }
+}
+
+.input-dates-formLogin{
+    width: 40%;
+    min-width: 250px;
+    height: 60%;
+    min-height: 400px;
+    border-radius: .5rem;
+    background-color: rgb(27, 28, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex-direction: column;
+    color: rgb(247, 247, 247);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: .5rem;
+
+    h3{
+        color: #00ffaa;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
+
+.logo-form{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 60%;
+        height: 80%;
+    }
+}
+
+.logo-formLogin{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 60%;
+        height: 80%;
+    }
+}
+
+.input-dates-form::before,
+.input-dates-formLogin::before{
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    background-color: #00ffaa;
+}
+
+.input-dates-form::after,
+.input-dates-formLogin::after{
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5rem;
+    right: -5rem;
+    background-color: #00ffaa;
+    z-index: 1;
+}
+
+.input-dates-box{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.inputForm{
+    width: 80%;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    border: thin solid rgb(91,94,100);
+    color: rgb(91,94,100);
+    background-color: rgb(27, 28, 29);
+    color: rgb(247, 247, 247);
+}
+
+.input-password-box{
+    width: 80%;
+    position: relative;
+    input{
+        width: 100%;
+    }
+}
+
+
+.inputs-buttons-form{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    z-index: 999;
+}
+
+
+.button-form{
+    width: 4.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: rgb(27, 28, 29);
+    outline: none;
+    border: 2px solid rgb(91,94,100);
+    border-radius: .3rem;
+    color: rgb(247, 247, 247);
+    transition: all .3s ease-in;
+}
+
+#sendButton,
+#sendButtonLogin{
+    background-color: #00ffaa;
+    color: rgb(247, 247, 247);
+    border: 2px solid #00ffaa;
+}
+
+.show{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #00ffaa;
+}
+
+.text-login{
+    display: block;
+    width: 80%;
+    padding-left: 1rem;
+}
+
+.a-login{
+    color: #00ffaa;
+    text-decoration: none;
+}
+
+@media screen and (max-width:300px) {
+    .input-dates-form{
+        height: 350px;
+    }
+
+    .input-dates-formLogin{
+        height: 200px !important;
+    }
+
+    .inputForm{
+        height: 1rem;
+    }
+
+    .button-form{
+        height: 1.3rem;
+        font-size: 12px;
+    }
+
+    #sendButton{
+        height: 1.3rem;
+        font-size: 12px;
+    }
+
+    .text-login{
+        display: block;
+        font-size: 12px !important;
+        height: 3rem;
+    }
+}
